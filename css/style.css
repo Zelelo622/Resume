@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "TT Commons";
+  src: url("../fonts/TT\ Commons\ Light.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TT Commons", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #000;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.profile__inner {
+  margin-top: 40px;
+}
+
+.profile__img {
+  width: 320px;
+}
+
+.profile__contact {
+  position: relative;
+  top: -30px;
+  width: 320px;
+  background-color: #f51b1b;
+  border-radius: 24px 24px 0px 0px;
+  padding: 40px 24px;
+}
+.profile__contact::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  border-bottom-left-radius: 50%;
+  background: transparent;
+  box-shadow: 0 20px 0 0 #f51b1b;
+}
+.profile__contact::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: 50%;
+  height: 50px;
+  width: 50px;
+  border-bottom-right-radius: 50%;
+  background: transparent;
+  box-shadow: 0 20px 0 0 #f51b1b;
+}
+
+.profile__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.profile__subtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.profile__link {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.profile__link-item {
+  margin-bottom: 20px;
+}
+.profile__link-item:last-child {
+  margin-bottom: 0;
+}
