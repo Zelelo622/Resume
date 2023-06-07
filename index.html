@@ -10,32 +10,105 @@
   </head>
   <body>
     <main class="main">
-      <section class="profile">
-        <div class="container">
-          <div class="profile__inner">
-            <img
-              src="./img/profile_img.jpg"
-              alt="Фотография профиля"
-              class="profile__img"
-            />
-            <div class="profile__contact">
-              <h1 class="profile__title">Кирин Егор</h1>
-              <div class="profile__subtitle">21 год, Воронеж</div>
-              <div class="profile__link">
-                <a href="tel:+79046999564" class="profile__link-item"
-                  >+7 904 699 95 64</a
-                ><a
-                  href="mailto: egorcom27@gmail.com"
-                  class="profile__link-item"
-                  >egorcom27@gmail.com</a
-                ><a href="https://t.me/Zelelo" class="profile__link-item"
-                  >Telegram</a
-                ><a href="https://github.com/Zelelo622" class="profile__link-item">GitHub</a>
+      <div class="profile-container">
+        <section class="profile">
+          <div class="container">
+            <div class="profile__inner">
+              <img
+                src="./img/profile_img.jpg"
+                alt="Фотография профиля"
+                class="profile__img"
+              />
+              <div class="profile__contact">
+                <h1 class="profile__title">Кирин Егор</h1>
+                <div class="profile__subtitle">21 год, Воронеж</div>
+                <div class="profile__link">
+                  <a href="tel:+79046999564" class="profile__link-item"
+                    >+7 904 699 95 64</a
+                  ><a
+                    href="mailto: egorcom27@gmail.com"
+                    class="profile__link-item"
+                    >egorcom27@gmail.com</a
+                  ><a
+                    href="https://t.me/Zelelo"
+                    target="_blank"
+                    class="profile__link-item"
+                    >Telegram</a
+                  ><a
+                    href="https://github.com/Zelelo622"
+                    target="_blank"
+                    class="profile__link-item"
+                    >GitHub</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="bio">
+          <div class="container">
+            <div class="bio__inner">
+              <div class="bio__logo">
+                <img src="./img/logo__img.svg" alt="Логотип" />
+              </div>
+              <div class="bio__text">
+                Привет! Меня зовут Егор, студент с большим интересом к фронтенд
+                разработке. Хотя у меня пока нет профессионального опыта, я
+                активно учусь и развиваю свои навыки в этой области.
+              </div>
+              <div class="bio__block">
+                <div class="bio__block-text bio__text">
+                  Некоторые из моих достижений и проектов:
+                </div>
+                <ul class="bio__list">
+                  <li class="bio__list-item bio__text">
+                    Я принял активное участие в разработке онлайн-супермаркета
+                    DIEGO с возможностью доставки на дом, занимая должность
+                    фронтенд разработчика. В моей ответственности лежало
+                    создание дизайна, разработка функциональной схемы и участие
+                    в создании UML-диаграмм и документов. С данным проектом, вы
+                    можете ознакомиться по ссылке:
+                    <a class="link" href="https://github.com/Zelelo622/TP-4.1-2"
+                      >DIEGO</a
+                    >.
+                  </li>
+                  <li class="bio__list-item bio__text">
+                    У меня также есть несколько проектов верстки, над которыми я
+                    работал, и вы можете ознакомиться с ними на моем профиле на
+                    GitHub.
+                  </li>
+                </ul>
+              </div>
+              <div class="bio__skills">
+                <div class="bio__skills-item">
+                  <div class="bio__skills-title">Образование</div>
+                  <div class="bio__skills-info">
+                    <p class="bio__skills-text">
+                      Воронежский Государственный Университет
+                    </p>
+                    <p class="bio__skills-opacity">
+                      Факультет компьютерных наук
+                    </p>
+                    <p class="bio__skills-opacity">2020-2024</p>
+                  </div>
+                </div>
+                <div class="bio__skills-item">
+                  <div class="bio__skills-title">Навыки</div>
+                  <div class="bio__skills-info">
+                    <ul class="bio__skills-list skills-list">
+                      <li class="skills-list__item">HTML</li>
+                      <li class="skills-list__item">CSS</li>
+                      <li class="skills-list__item">JavaScript</li>
+                      <li class="skills-list__item">React</li>
+                      <li class="skills-list__item">Git</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>

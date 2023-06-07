@@ -21,10 +21,23 @@ a {
   color: #fff;
 }
 
+.link {
+  color: #56aeff;
+  transition: all 0.2s;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 40px;
   margin: 0 auto;
+}
+
+.profile-container {
+  display: flex;
 }
 
 .profile__inner {
@@ -46,24 +59,24 @@ a {
 .profile__contact::before {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -80px;
   left: 50%;
-  height: 50px;
+  height: 80px;
   width: 50px;
   border-bottom-left-radius: 50%;
   background: transparent;
-  box-shadow: 0 20px 0 0 #f51b1b;
+  box-shadow: 0 40px 0 0 #f51b1b;
 }
 .profile__contact::after {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -80px;
   right: 50%;
-  height: 50px;
+  height: 80px;
   width: 50px;
   border-bottom-right-radius: 50%;
   background: transparent;
-  box-shadow: 0 20px 0 0 #f51b1b;
+  box-shadow: 0 40px 0 0 #f51b1b;
 }
 
 .profile__title {
@@ -84,7 +97,107 @@ a {
 
 .profile__link-item {
   margin-bottom: 20px;
+  transition: all 0.2s;
 }
 .profile__link-item:last-child {
   margin-bottom: 0;
+}
+.profile__link-item:hover {
+  opacity: 0.7;
+}
+
+.bio {
+  width: 100%;
+}
+
+.bio__inner {
+}
+
+.bio__logo {
+  text-align: right;
+  margin-top: 26px;
+  margin-left: auto;
+}
+
+.bio__text {
+  max-width: 690px;
+  margin-bottom: 34px;
+}
+
+.bio__block {
+  margin-bottom: 40px;
+}
+
+.bio__block-text {
+  margin-bottom: 20px;
+}
+
+.bio__list {
+  padding-left: 30px;
+}
+
+.bio__list-item {
+  margin-bottom: 0;
+}
+.bio__list-item + .bio__list-item {
+  margin-top: 10px;
+}
+.bio__list-item::before {
+  content: "•";
+  display: inline-block;
+  width: 10px;
+  margin-left: -20px;
+}
+
+.bio__skills {
+  position: relative;
+  border: 1px solid #fff;
+  padding: 47px 49px 47px 27px;
+  background-color: #000;
+}
+.bio__skills::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-top: 0px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 0px solid #fff;
+  bottom: 100%;
+  left: 57px;
+  transform: rotate(45deg);
+  margin-bottom: -20px;
+  background-color: #000;
+}
+
+.bio__skills-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-content: end;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.bio__skills-title {
+  font-size: 24px;
+}
+
+.bio__skills-info {
+}
+
+.bio__skills-text {
+}
+
+.bio__skills-opacity {
+  opacity: 0.4;
+}
+
+.skills-list {
+  display: flex;
+}
+
+.skills-list__item + .skills-list__item {
+  margin-left: 32px;
 }

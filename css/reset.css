@@ -120,6 +120,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* change colours to suit your needs */
 ins {
   background-color: #ff9;
